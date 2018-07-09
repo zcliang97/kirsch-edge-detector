@@ -22,7 +22,6 @@ end directions;
 --Declare states -- 
 package states is 
   subtype state is std_logic_vector(2 downto 0);
-  constant Reset		      :state := "000";
 	constant Set1           :state := "001";
   constant Set2      	    :state := "010";
   constant Set3           :state := "011";
@@ -70,6 +69,40 @@ begin
   --Signals STAGE 2
     signal reg2, reg3, reg4 : std_logic_vector(7 downto 0);
 
+    stage1: process begin
+      wait until rising_edge(clk);
+      reg4 <= reg0 + reg1;
+      case(state) is
+        when Set1 =>
+          reg0 <= h+a;
+          reg1 <= b;
+          if g > b then
+            reg1 <= g;
+          end if;
+        when Set2 =>
+          reg0 <= b+c;
+          reg1 <= b;
+          if d > a then
+            reg1 <= d;
+          end if;
+        when Set3 =>
+          reg0 <= d+e;
+          reg1 <= c;
+          if f > c then
+            reg1 <= f;
+          end if;
+        when Set4 =>
+          reg0 <= f+g;
+          reg1 <= e;
+          if h > e then
+            reg1 <= h;
+          end if;
+        when others =>
+          reg0 <= reg0;
+          reg1 <= reg1;
+      end case;
+    end process;
+
     stage2: process begin
       wait until rising_edge(clk);
       reg4 <= reg0 + reg1;
@@ -80,4 +113,6 @@ begin
           reg3 <= reg3 + (reg0 sll 1) + reg0;
       end case;
     end process;
+
+
 end architecture;
