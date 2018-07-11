@@ -17,38 +17,83 @@ o-quiet -auto_acc_if_foreign -work work-msim -L /opt-src/CMC/local/maagaard/kits
 tCvgOpt 0
 n@_opt
 OL;O;10.5c;63
-Pfile_pkg
+R0
+Pall_states
 Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
 Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
-Z4 w1530207456
+Z4 w1531178118
 R0
-Z5 8kirsch_unsynth_pkg.vhd
-Z6 Fkirsch_unsynth_pkg.vhd
+Z5 8kirsch.vhd
+Z6 Fkirsch.vhd
+l0
+L23
+V@8_OzA7VbhDekcoETc>6H1
+!s100 Lb=b2no:<OKFh0iezM^0:1
+Z7 OL;C;10.5c;63
+33
+Z8 !s110 1531352529
+!i10b 1
+Z9 !s108 1531352529.000000
+Z10 !s90 -2008|-quiet|-work|work-msim|-suppress|vcom-1141|util.vhd|kirsch_synth_pkg.vhd|mem.vhd|kirsch.vhd|string_pkg.vhd|kirsch_unsynth_pkg.vhd|kirsch_tb.vhd|
+Z11 !s107 kirsch_tb.vhd|kirsch_unsynth_pkg.vhd|string_pkg.vhd|kirsch.vhd|mem.vhd|kirsch_synth_pkg.vhd|util.vhd|
+!i113 0
+Z12 o-suppress vcom-1141 -quiet -2008 -work work-msim
+Z13 tExplicit 1 CvgOpt 0
+Pdirections
+R1
+R2
+R3
+R4
+R0
+R5
+R6
+l0
+L6
+VJVlQFHg=]a4D[nMJVA6>o1
+!s100 BJ?CA[`Ci2@98XQX7h<>o2
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 0
+R12
+R13
+Pfile_pkg
+R1
+R2
+R3
+Z14 w1530207456
+R0
+Z15 8kirsch_unsynth_pkg.vhd
+Z16 Fkirsch_unsynth_pkg.vhd
 l0
 L9
 V>zIIRA6QMIz4?e1T8Lda31
 !s100 U1aXY0Ke0>klVHz9>WH_d2
-Z7 OL;C;10.5c;63
+R7
 33
 b1
-Z8 !s110 1530207576
+R8
 !i10b 1
-Z9 !s108 1530207575.000000
-Z10 !s90 -2008|-quiet|-work|work-msim|-suppress|vcom-1141|util.vhd|kirsch_synth_pkg.vhd|string_pkg.vhd|kirsch_unsynth_pkg.vhd|mem.vhd|kirsch_spec.vhd|string_pkg.vhd|kirsch_tb.vhd|
-Z11 !s107 kirsch_tb.vhd|kirsch_spec.vhd|mem.vhd|kirsch_unsynth_pkg.vhd|string_pkg.vhd|kirsch_synth_pkg.vhd|util.vhd|
+R9
+R10
+R11
 !i113 0
-Z12 o-suppress vcom-1141 -quiet -2008 -work work-msim
-Z13 tExplicit 1 CvgOpt 0
+R12
+R13
 Bbody
-Z14 DPx4 work 8 file_pkg 0 22 >zIIRA6QMIz4?e1T8Lda31
+Z17 DPx4 work 8 file_pkg 0 22 >zIIRA6QMIz4?e1T8Lda31
 R1
 R2
 R3
 l0
 L21
-VaOGd7H<m]FU0]GHLzYnR[0
-!s100 CmEX2UN0SXVME9G83RhDn3
+Z18 VaOGd7H<m]FU0]GHLzYnR[0
+Z19 !s100 CmEX2UN0SXVME9G83RhDn3
 R7
 33
 R8
@@ -61,20 +106,20 @@ R12
 R13
 Ekirsch
 R4
-R14
-Z15 DPx4 work 10 string_pkg 0 22 M^zm_CJY9ZFiO]EWojbWK0
-Z16 DPx4 work 18 kirsch_unsynth_pkg 0 22 a<P012>`@QK223z_IVb8_1
-Z17 DPx4 work 16 kirsch_synth_pkg 0 22 hkD_V8VE9GPIgjaAiQP2U2
+Z20 DPx4 work 16 kirsch_synth_pkg 0 22 hkD_V8VE9GPIgjaAiQP2U2
+Z21 DPx4 work 10 directions 0 22 JVlQFHg=]a4D[nMJVA6>o1
+Z22 DPx4 work 10 all_states 0 22 @8_OzA7VbhDekcoETc>6H1
+Z23 DPx4 work 4 util 0 22 ?lGneTZ^SU78DaKOKGTfb3
 R1
 R2
 R3
 R0
-Z18 8kirsch_spec.vhd
-Z19 Fkirsch_spec.vhd
+R5
+R6
 l0
-L12
-V<hIZJ<5Ad=>6_^LC0[NjW0
-!s100 ;5U]ZHX8KF0bzYWc_IJJA3
+L41
+V5?V?CEY;F@H7o=YJM31HL1
+!s100 Sf^8[[`Ak1_64Z4F_VE4M2
 R7
 33
 R8
@@ -86,18 +131,19 @@ R11
 R12
 R13
 Amain
-R14
-R15
-R16
-R17
+Z24 DEx4 work 3 mem 0 22 ZjCBIM5VWP^CfPYQegM8a0
+R20
+R21
+R22
+R23
 R1
 R2
 R3
-Z20 DEx4 work 6 kirsch 0 22 <hIZJ<5Ad=>6_^LC0[NjW0
-l152
-L30
-VE2KWo8^N0_K8@<Jc:^6zF0
-!s100 AJanQ]<k6Y8nl2^SRU4?W1
+Z25 DEx4 work 6 kirsch 0 22 5?V?CEY;F@H7o=YJM31HL1
+l96
+L64
+Z26 V0CaZ63U8D[ja@h2j0J^k<2
+Z27 !s100 i:OIAW<fk>ccjbzgRJOGG1
 R7
 33
 R8
@@ -112,10 +158,10 @@ Pkirsch_synth_pkg
 R1
 R2
 R3
-R4
+R14
 R0
-Z21 8kirsch_synth_pkg.vhd
-Z22 Fkirsch_synth_pkg.vhd
+Z28 8kirsch_synth_pkg.vhd
+Z29 Fkirsch_synth_pkg.vhd
 l0
 L12
 VhkD_V8VE9GPIgjaAiQP2U2
@@ -132,14 +178,14 @@ R11
 R12
 R13
 Bbody
-R17
+R20
 R1
 R2
 R3
 l0
 L65
-Vki]oWk93P^hHlYSOjHHh<3
-!s100 DO=fbUIBL[SL7hlhXS0bN3
+Z30 Vki]oWk93P^hHlYSOjHHh<3
+Z31 !s100 DO=fbUIBL[SL7hlhXS0bN3
 R7
 33
 R8
@@ -151,17 +197,17 @@ R11
 R12
 R13
 Ekirsch_tb
-R4
-R15
-R16
 R14
+Z32 DPx4 work 10 string_pkg 0 22 M^zm_CJY9ZFiO]EWojbWK0
+Z33 DPx4 work 18 kirsch_unsynth_pkg 0 22 a<P012>`@QK223z_IVb8_1
 R17
+R20
 R1
 R2
 R3
 R0
-Z23 8kirsch_tb.vhd
-Z24 Fkirsch_tb.vhd
+Z34 8kirsch_tb.vhd
+Z35 Fkirsch_tb.vhd
 l0
 L23
 Vh;cX=lPhSCKOkYnDdNo8H0
@@ -177,11 +223,11 @@ R11
 R12
 R13
 Amain
-R20
-R15
-R16
-R14
+DEx4 work 6 kirsch 0 22 <hIZJ<5Ad=>6_^LC0[NjW0
+R32
+R33
 R17
+R20
 R1
 R2
 R3
@@ -192,25 +238,25 @@ VZOaj4iheoDNLj>:FAMUoN3
 !s100 :4Wg;8mR^A_eX0Xl;F>Pc2
 R7
 33
-R8
+Z36 !s110 1530207576
 !i10b 1
-R9
-R10
-R11
+Z37 !s108 1530207575.000000
+Z38 !s90 -2008|-quiet|-work|work-msim|-suppress|vcom-1141|util.vhd|kirsch_synth_pkg.vhd|string_pkg.vhd|kirsch_unsynth_pkg.vhd|mem.vhd|kirsch_spec.vhd|string_pkg.vhd|kirsch_tb.vhd|
+Z39 !s107 kirsch_tb.vhd|kirsch_spec.vhd|mem.vhd|kirsch_unsynth_pkg.vhd|string_pkg.vhd|kirsch_synth_pkg.vhd|util.vhd|
 !i113 0
 R12
 R13
 Pkirsch_unsynth_pkg
+R20
 R17
-R14
-R15
+R32
 R1
 R2
 R3
-R4
+R14
 R0
-R5
-R6
+R15
+R16
 l0
 L96
 Va<P012>`@QK223z_IVb8_1
@@ -227,17 +273,17 @@ R11
 R12
 R13
 Bbody
-R16
+R33
+R20
 R17
-R14
-R15
+R32
 R1
 R2
 R3
 l0
 L122
-V:]U::nEU3LM>GL35;NWVk0
-!s100 ZS[;1imXW3BYaddiOB_8Y0
+Z40 V:]U::nEU3LM>GL35;NWVk0
+Z41 !s100 ZS[;1imXW3BYaddiOB_8Y0
 R7
 33
 R8
@@ -249,13 +295,13 @@ R11
 R12
 R13
 Emem
-R4
+R14
 R1
 R2
 R3
 R0
-Z25 8mem.vhd
-Z26 Fmem.vhd
+Z42 8mem.vhd
+Z43 Fmem.vhd
 l0
 L23
 VZjCBIM5VWP^CfPYQegM8a0
@@ -274,11 +320,11 @@ Amain
 R1
 R2
 R3
-DEx4 work 3 mem 0 22 ZjCBIM5VWP^CfPYQegM8a0
+R24
 l47
 L37
-V?=YbiW<ak]Pb^Gomb4ERA2
-!s100 ]agfPMXCOINll1Z32G^hP2
+Z44 V?=YbiW<ak]Pb^Gomb4ERA2
+Z45 !s100 ]agfPMXCOINll1Z32G^hP2
 R7
 33
 R8
@@ -289,13 +335,35 @@ R11
 !i113 0
 R12
 R13
+Pstates
+R1
+R2
+R3
+w1531175349
+R0
+R5
+R6
+l0
+L23
+Vd[1S_KgSHaBI0UfDNOmhm1
+!s100 D=R]jRjhNOK5SMaIkcPeT2
+R7
+33
+!s110 1531175714
+!i10b 1
+!s108 1531175714.000000
+Z46 !s90 -2008|-quiet|-work|work-msim|-suppress|vcom-1141|kirsch.vhd|
+Z47 !s107 kirsch.vhd|
+!i113 0
+R12
+R13
 Pstring_pkg
 R2
 R3
-R4
+R14
 R0
-Z27 8string_pkg.vhd
-Z28 Fstring_pkg.vhd
+Z48 8string_pkg.vhd
+Z49 Fstring_pkg.vhd
 l0
 L7
 VM^zm_CJY9ZFiO]EWojbWK0
@@ -312,13 +380,13 @@ R11
 R12
 R13
 Bbody
-R15
+R32
 R2
 R3
 l0
 L17
-V2TTmP97[6DD?Za6[YSU2@0
-!s100 JFS8:j^04ni@AVIzUz=9?0
+Z50 V2TTmP97[6DD?Za6[YSU2@0
+Z51 !s100 JFS8:j^04ni@AVIzUz=9?0
 R7
 33
 R8
@@ -333,10 +401,10 @@ Putil
 R1
 R2
 R3
-R4
+R14
 R0
-Z29 8util.vhd
-Z30 Futil.vhd
+Z52 8util.vhd
+Z53 Futil.vhd
 l0
 L10
 V?lGneTZ^SU78DaKOKGTfb3
@@ -353,14 +421,14 @@ R11
 R12
 R13
 Bbody
-DPx4 work 4 util 0 22 ?lGneTZ^SU78DaKOKGTfb3
+R23
 R1
 R2
 R3
 l0
 L19
-V`^6eQ?>EB[z2M_^f;6?4O1
-!s100 UUl;:fi_dZo3PJM6oKQTo1
+Z54 V`^6eQ?>EB[z2M_^f;6?4O1
+Z55 !s100 UUl;:fi_dZo3PJM6oKQTo1
 R7
 33
 R8

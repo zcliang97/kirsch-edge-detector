@@ -1,61 +1,14 @@
-uw-sim /home/ece327/bin/uw-sim --nogui -Gtest_num=1 -Gresult_suffix=spec kirsch_spec.uwp
+uw-sim /home/ece327/bin/uw-sim kirsch.uwp
     INFO: Using testbench        : kirsch_tb
     INFO: Using design entity    : kirsch
     INFO: Using simulation script: kirsch_tb.sim
 Model Technology ModelSim SE-64 vmap 10.5c Lib Mapping Utility 2016.07 Jul 20 2016
 vmap -c 
-Copying /opt/questa105/modeltech/linux_x86_64/../modelsim.ini to modelsim.ini
-Reading pref.tcl
-
-# 10.5c
-
-# vsim -lib work-msim -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_mf -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/lpm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_primitives -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm-enc -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/maxv -c -debugDB -postsimdataflow "+autofindloop" -wlf uw_tmp/vsim.wlf -voptargs="+acc" -warning 3250 -warning 3894 -t 1ns -do "uw_tmp/uw-sim.tcl" kirsch_tb -g/kirsch_tb/period=20 -g/kirsch_tb/test_num=1 -g/kirsch_tb/result_suffix=spec 
-# Start time: 13:39:38 on Jun 28,2018
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Note: (vsim-8611) Generating debug db.
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "kirsch(main)".
-# //  ModelSim SE-64 10.5c Jul 20 2016Linux 3.10.0-862.3.3.el7.x86_64
-# //
-# //  Copyright 1991-2016 Mentor Graphics Corporation
-# //  All Rights Reserved.
-# //
-# //  ModelSim SE-64 and its associated documentation contain trade
-# //  secrets and commercial or financial information that are the property of
-# //  Mentor Graphics Corporation and are privileged, confidential,
-# //  and exempt from disclosure under the Freedom of Information Act,
-# //  5 U.S.C. Section 552. Furthermore, this information
-# //  is prohibited from disclosure under the Trade Secrets Act,
-# //  18 U.S.C. Section 1905.
-# //
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading ieee.numeric_std(body)
-# Loading work.kirsch_synth_pkg(body)
-# Loading work.file_pkg(body)
-# Loading work.string_pkg(body)
-# Loading work.kirsch_unsynth_pkg(body)
-# Loading work.kirsch_tb(main)#1
-# Loading work.kirsch(main)#1
-# ** Note: (vsim-8900) Creating design debug database uw_tmp/vsim.dbg.
-# do uw_tmp/uw-sim.tcl
-# PROG_MODE
-# False
-# bubbles=3
-# runtime=5250880
-# ** Note: XXXXXXXXXXXX reading image from tests/test1.txt
-#    Time: 0 ns  Iteration: 0  Instance: /kirsch_tb
-# ** Note: latency begin wait
-#    Time: 41302 ns  Iteration: 1  Instance: /kirsch_tb
-# ** Note: latency waiting
-#    Time: 41320 ns  Iteration: 1  Instance: /kirsch_tb
-# ** Note: latency waiting
-#    Time: 41340 ns  Iteration: 1  Instance: /kirsch_tb
-# ** Note: latency = 1
-#    Time: 41340 ns  Iteration: 1  Instance: /kirsch_tb
-# ** Note: XXXXXXXXXXXX sent image
-#    Time: 5243002 ns  Iteration: 0  Instance: /kirsch_tb
-# ** Note: XXXXXXXXXXXX got image
-#    Time: 5243020 ns  Iteration: 1  Instance: /kirsch_tb
-# End time: 13:39:42 on Jun 28,2018, Elapsed time: 0:00:04
-# Errors: 0, Warnings: 0
+Warning: vmap will not overwrite local modelsim.ini.
+Warning: Library already exists at "work-msim".
+Error: kirsch_tb.vhd, line 116: Signal "i_pixel" is type ieee.NUMERIC_STD.UNSIGNED; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+Error: kirsch_tb.vhd, line 121: Signal "o_row" is type ieee.NUMERIC_STD.UNSIGNED; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+Error: kirsch_tb.vhd, line 122: Signal "o_col" is type ieee.NUMERIC_STD.UNSIGNED; expecting type ieee.std_logic_1164.STD_LOGIC_VECTOR.
+Error: kirsch_tb.vhd, line 123: Formal port "debug_switch" has OPEN or no actual associated with it.
+ERROR: Failure (exit code) when running `vcom -2008 -quiet -work work-msim  -suppress vcom-1141 util.vhd kirsch_synth_pkg.vhd mem.vhd kirsch.vhd string_pkg.vhd kirsch_unsynth_pkg.vhd kirsch_tb.vhd'
+ERROR: Failure (error grep) when running `uw-msim-com util.vhd kirsch_synth_pkg.vhd mem.vhd kirsch.vhd string_pkg.vhd kirsch_unsynth_pkg.vhd kirsch_tb.vhd'
